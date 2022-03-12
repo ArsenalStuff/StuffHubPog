@@ -6,6 +6,7 @@ local AutoFarm = library:CreateWindow("StuffHub")
 local Combat = AutoFarm:CreateFolder("Combat")
 local Misc = AutoFarm:CreateFolder("Misc")
 local Other = AutoFarm:CreateFolder("Other")
+local Credits = AutoFarm:CreateFolder("Credits")
 
 
 Combat:Button("Silent Aim",function()
@@ -792,6 +793,134 @@ end)
 Other:Button("V.G Hub",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 end)
+Credits:Button("Credits",function()
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local UISizeConstraint = Instance.new("UISizeConstraint")
+local Content = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIPadding = Instance.new("UIPadding")
+local MadeBy = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local TextLabel2 = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local CloseButton = Instance.new("TextButton")
+
+
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.336559951, 0, 0.323926389, 0)
+Frame.Size = UDim2.new(0, 600, 0, 360)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+UISizeConstraint.Parent = Frame
+UISizeConstraint.MaxSize = Vector2.new(600, 350)
+
+Content.Name = "Content"
+Content.Parent = Frame
+Content.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Content.BackgroundTransparency = 1.000
+Content.BorderSizePixel = 0
+Content.Size = UDim2.new(1, 0, 1, 0)
+
+UIListLayout.Parent = Content
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 20)
+
+UIPadding.Parent = Content
+UIPadding.PaddingLeft = UDim.new(0, 20)
+UIPadding.PaddingRight = UDim.new(0, 20)
+
+MadeBy.Name = "MadeBy"
+MadeBy.Parent = Content
+MadeBy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MadeBy.BackgroundTransparency = 1.000
+MadeBy.BorderSizePixel = 0
+MadeBy.LayoutOrder = 1
+MadeBy.Size = UDim2.new(0, 100, 0, 100)
+
+TextLabel.Parent = MadeBy
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "Bolts#8888 For Kill All And FE Sunglasses."
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 32.000
+
+UIListLayout_2.Parent = MadeBy
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+TextLabel2.Name = "TextLabel2"
+TextLabel2.Parent = MadeBy
+TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.BorderSizePixel = 0
+TextLabel2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel2.Font = Enum.Font.Arial
+TextLabel2.Text = "ArsenalStuff#6969 For Everything Else."
+TextLabel2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel2.TextSize = 32.000
+
+Title.Name = "Title"
+Title.Parent = Content
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0, 0, -0.345714271, 0)
+Title.Size = UDim2.new(0, 200, 0, 50)
+Title.Font = Enum.Font.ArialBold
+Title.Text = "Credits"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextSize = 50.000
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = Frame
+CloseButton.AnchorPoint = Vector2.new(1, 0)
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(1.00666666, -20, -0.0199999996, 20)
+CloseButton.Size = UDim2.new(0, 20, 0, 20)
+CloseButton.AutoButtonColor = false
+CloseButton.Font = Enum.Font.ArialBold
+CloseButton.Text = "x"
+CloseButton.TextColor3 = Color3.fromRGB(99, 99, 99)
+CloseButton.TextSize = 32.000
+
+
+
+local function XOWF_fake_script()  
+	local script = Instance.new('LocalScript', CloseButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+end
+coroutine.wrap(XOWF_fake_script)()
+local function VMCKUGO_fake_script() 
+	local script = Instance.new('LocalScript', Frame)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+end
+coroutine.wrap(VMCKUGO_fake_script)()
+end)
+
 
 
 
@@ -866,4 +995,5 @@ local function BXTS_fake_script()
 end
 coroutine.wrap(BXTS_fake_script)()
 end
+
 
