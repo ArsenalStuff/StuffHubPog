@@ -742,24 +742,460 @@ game:GetService("RunService").RenderStepped:Connect(function()
 end)
 end)
 
+Combat:Button("FE Invisible",function()
+if _G.SendNotifications == true then
+        game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "StuffHub";
+            Text = "FE Invisible Loaded!";
+            Duration = 5;
+        })
+end
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/arsenal%20inv.lua'),true))()
+end)
+
 Misc:Button("Darkheart",function()
-for b,b in pairs(game.ReplicatedStorage.Levels:GetChildren())do b.Value="Darkheart"end 
+    local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local UISizeConstraint = Instance.new("UISizeConstraint")
+local Content = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIPadding = Instance.new("UIPadding")
+local MadeBy = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local TextLabel2 = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local CloseButton = Instance.new("TextButton")
+
+
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.336559951, 0, 0.323926389, 0)
+Frame.Size = UDim2.new(0, 600, 0, 360)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+UISizeConstraint.Parent = Frame
+UISizeConstraint.MaxSize = Vector2.new(600, 350)
+
+Content.Name = "Content"
+Content.Parent = Frame
+Content.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Content.BackgroundTransparency = 1.000
+Content.BorderSizePixel = 0
+Content.Size = UDim2.new(1, 0, 1, 0)
+
+UIListLayout.Parent = Content
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 20)
+
+UIPadding.Parent = Content
+UIPadding.PaddingLeft = UDim.new(0, 20)
+UIPadding.PaddingRight = UDim.new(0, 20)
+
+MadeBy.Name = "MadeBy"
+MadeBy.Parent = Content
+MadeBy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MadeBy.BackgroundTransparency = 1.000
+MadeBy.BorderSizePixel = 0
+MadeBy.LayoutOrder = 1
+MadeBy.Size = UDim2.new(0, 100, 0, 100)
+
+TextLabel.Parent = MadeBy
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "Wear the dagger melee!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 32.000
+
+UIListLayout_2.Parent = MadeBy
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+
+
+
+local function VMCKUGO_fake_script() 
+	local script = Instance.new('LocalScript', Frame)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+wait(3)
+frame.Visible = false
+end
+coroutine.wrap(VMCKUGO_fake_script)()
+game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Name = "poop"
+wait("2")
+game:GetService("ReplicatedStorage").Viewmodels["v_Darkheart"].Name = "v_Dagger"
 game.ReplicatedStorage.Events.KillMe:FireServer()
 end)
 Misc:Button("Illumina",function()
-for b,b in pairs(game.ReplicatedStorage.Levels:GetChildren())do b.Value="Illumina"end 
+    local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local UISizeConstraint = Instance.new("UISizeConstraint")
+local Content = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIPadding = Instance.new("UIPadding")
+local MadeBy = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local TextLabel2 = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local CloseButton = Instance.new("TextButton")
+
+
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.336559951, 0, 0.323926389, 0)
+Frame.Size = UDim2.new(0, 600, 0, 360)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+UISizeConstraint.Parent = Frame
+UISizeConstraint.MaxSize = Vector2.new(600, 350)
+
+Content.Name = "Content"
+Content.Parent = Frame
+Content.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Content.BackgroundTransparency = 1.000
+Content.BorderSizePixel = 0
+Content.Size = UDim2.new(1, 0, 1, 0)
+
+UIListLayout.Parent = Content
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 20)
+
+UIPadding.Parent = Content
+UIPadding.PaddingLeft = UDim.new(0, 20)
+UIPadding.PaddingRight = UDim.new(0, 20)
+
+MadeBy.Name = "MadeBy"
+MadeBy.Parent = Content
+MadeBy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MadeBy.BackgroundTransparency = 1.000
+MadeBy.BorderSizePixel = 0
+MadeBy.LayoutOrder = 1
+MadeBy.Size = UDim2.new(0, 100, 0, 100)
+
+TextLabel.Parent = MadeBy
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "Wear the dagger melee!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 32.000
+
+UIListLayout_2.Parent = MadeBy
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+
+
+
+local function VMCKUGO_fake_script() 
+	local script = Instance.new('LocalScript', Frame)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+wait(3)
+frame.Visible = false
+end
+coroutine.wrap(VMCKUGO_fake_script)()
+game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Name = "poop"
+wait("2")
+game:GetService("ReplicatedStorage").Viewmodels["v_Illumina"].Name = "v_Dagger"
 game.ReplicatedStorage.Events.KillMe:FireServer()
 end)
 Misc:Button("Venomshank",function()
-for b,b in pairs(game.ReplicatedStorage.Levels:GetChildren())do b.Value="Venomshank"end 
+    local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local UISizeConstraint = Instance.new("UISizeConstraint")
+local Content = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIPadding = Instance.new("UIPadding")
+local MadeBy = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local TextLabel2 = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local CloseButton = Instance.new("TextButton")
+
+
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.336559951, 0, 0.323926389, 0)
+Frame.Size = UDim2.new(0, 600, 0, 360)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+UISizeConstraint.Parent = Frame
+UISizeConstraint.MaxSize = Vector2.new(600, 350)
+
+Content.Name = "Content"
+Content.Parent = Frame
+Content.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Content.BackgroundTransparency = 1.000
+Content.BorderSizePixel = 0
+Content.Size = UDim2.new(1, 0, 1, 0)
+
+UIListLayout.Parent = Content
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 20)
+
+UIPadding.Parent = Content
+UIPadding.PaddingLeft = UDim.new(0, 20)
+UIPadding.PaddingRight = UDim.new(0, 20)
+
+MadeBy.Name = "MadeBy"
+MadeBy.Parent = Content
+MadeBy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MadeBy.BackgroundTransparency = 1.000
+MadeBy.BorderSizePixel = 0
+MadeBy.LayoutOrder = 1
+MadeBy.Size = UDim2.new(0, 100, 0, 100)
+
+TextLabel.Parent = MadeBy
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "Wear the dagger melee!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 32.000
+
+UIListLayout_2.Parent = MadeBy
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+
+
+
+local function VMCKUGO_fake_script() 
+	local script = Instance.new('LocalScript', Frame)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+wait(3)
+frame.Visible = false
+end
+coroutine.wrap(VMCKUGO_fake_script)()
+game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Name = "poop"
+wait("2")
+game:GetService("ReplicatedStorage").Viewmodels["v_Venomshank"].Name = "v_Dagger"
 game.ReplicatedStorage.Events.KillMe:FireServer()
 end)
 Misc:Button("Ghostwalker",function()
-for b,b in pairs(game.ReplicatedStorage.Levels:GetChildren())do b.Value="Ghostwalker"end 
+    local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local UISizeConstraint = Instance.new("UISizeConstraint")
+local Content = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIPadding = Instance.new("UIPadding")
+local MadeBy = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local TextLabel2 = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local CloseButton = Instance.new("TextButton")
+
+
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.336559951, 0, 0.323926389, 0)
+Frame.Size = UDim2.new(0, 600, 0, 360)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+UISizeConstraint.Parent = Frame
+UISizeConstraint.MaxSize = Vector2.new(600, 350)
+
+Content.Name = "Content"
+Content.Parent = Frame
+Content.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Content.BackgroundTransparency = 1.000
+Content.BorderSizePixel = 0
+Content.Size = UDim2.new(1, 0, 1, 0)
+
+UIListLayout.Parent = Content
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 20)
+
+UIPadding.Parent = Content
+UIPadding.PaddingLeft = UDim.new(0, 20)
+UIPadding.PaddingRight = UDim.new(0, 20)
+
+MadeBy.Name = "MadeBy"
+MadeBy.Parent = Content
+MadeBy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MadeBy.BackgroundTransparency = 1.000
+MadeBy.BorderSizePixel = 0
+MadeBy.LayoutOrder = 1
+MadeBy.Size = UDim2.new(0, 100, 0, 100)
+
+TextLabel.Parent = MadeBy
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "Wear the dagger melee!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 32.000
+
+UIListLayout_2.Parent = MadeBy
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+
+
+
+local function VMCKUGO_fake_script() 
+	local script = Instance.new('LocalScript', Frame)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+wait(3)
+frame.Visible = false
+end
+coroutine.wrap(VMCKUGO_fake_script)()
+game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Name = "poop"
+wait("2")
+game:GetService("ReplicatedStorage").Viewmodels["v_Ghostwalker"].Name = "v_Dagger"
 game.ReplicatedStorage.Events.KillMe:FireServer()
 end)
 Misc:Button("The Ice Dagger",function()
-for b,b in pairs(game.ReplicatedStorage.Levels:GetChildren())do b.Value="Ice Dagger"end 
+    local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local UISizeConstraint = Instance.new("UISizeConstraint")
+local Content = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIPadding = Instance.new("UIPadding")
+local MadeBy = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local TextLabel2 = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local CloseButton = Instance.new("TextButton")
+
+
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.336559951, 0, 0.323926389, 0)
+Frame.Size = UDim2.new(0, 600, 0, 360)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+UISizeConstraint.Parent = Frame
+UISizeConstraint.MaxSize = Vector2.new(600, 350)
+
+Content.Name = "Content"
+Content.Parent = Frame
+Content.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Content.BackgroundTransparency = 1.000
+Content.BorderSizePixel = 0
+Content.Size = UDim2.new(1, 0, 1, 0)
+
+UIListLayout.Parent = Content
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 20)
+
+UIPadding.Parent = Content
+UIPadding.PaddingLeft = UDim.new(0, 20)
+UIPadding.PaddingRight = UDim.new(0, 20)
+
+MadeBy.Name = "MadeBy"
+MadeBy.Parent = Content
+MadeBy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MadeBy.BackgroundTransparency = 1.000
+MadeBy.BorderSizePixel = 0
+MadeBy.LayoutOrder = 1
+MadeBy.Size = UDim2.new(0, 100, 0, 100)
+
+TextLabel.Parent = MadeBy
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "Wear the dagger melee!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 32.000
+
+UIListLayout_2.Parent = MadeBy
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+
+
+
+local function VMCKUGO_fake_script() 
+	local script = Instance.new('LocalScript', Frame)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+wait(3)
+frame.Visible = false
+end
+coroutine.wrap(VMCKUGO_fake_script)()
+game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Name = "poop"
+wait("2")
+game:GetService("ReplicatedStorage").Viewmodels["v_Ice Dagger"].Name = "v_Dagger"
 game.ReplicatedStorage.Events.KillMe:FireServer()
 end)
 Misc:Button("Unlock All",function()
@@ -772,6 +1208,11 @@ Misc:Button("FE Sunglasses",function()
 game.ReplicatedStorage.Events.Sunglasses:FireServer()
  end
 end)
+
+end)
+Misc:Button("FE Invisible Skin",function()
+
+
 
 end)
 Misc:Button("Cannot Be Banned",function()
@@ -995,5 +1436,4 @@ local function BXTS_fake_script()
 end
 coroutine.wrap(BXTS_fake_script)()
 end
-
 
