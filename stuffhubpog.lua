@@ -855,7 +855,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BorderSizePixel = 0
 TextLabel.Size = UDim2.new(0, 200, 0, 50)
 TextLabel.Font = Enum.Font.Arial
-TextLabel.Text = "Bolts#8888 For Kill All And FE Sunglasses."
+TextLabel.Text = "Bolts#8888 For Kill All."
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 32.000
 
